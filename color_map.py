@@ -14,7 +14,8 @@ for row in reader:
 
 svg = open('counties.svg', 'r').read()
 
-soup = BeautifulSoup(svg, selfClosingTags=['defs', 'sodipodi:namedview'])
+soup = BeautifulSoup(svg, 'html.parser') #selfClosingTags=['defs', 'sodipodi:namedview'])
+#soup = BeautifulSoup(svg, selfClosingTags=['defs', 'sodipodi:namedview'])  #BeautifulSoup(markup, "lxml-xml") BeautifulSoup(markup, "xml")
 
 paths = soup.findAll('path')
 
@@ -44,6 +45,9 @@ for p in paths:
             color_class = 0
 
         color = colors[color_class]
-        p['style'] = path_style + color
+        soup.find('path')['style'] = path_style + color
+        #print(p)
 
-print(soup.prettify())
+output = soup.prettify()
+open('output.svg', 'w').write(output)
+#print(soup.prettify())
