@@ -5,7 +5,7 @@
 * to change colors: edit 'colors' list
 * to change groups: add or delete conditions in 'for p in paths:' loop
 
-* 'unemployment09.csv' used for the data
+* 'unemployment09.csv' used for data, 9nth colomn for unemployment rate, 2 and 3 column for FIPS id
 * 'counties.svg' used for the base map of USA counties (src: https://commons.wikimedia.org/wiki/File:USA_Counties_with_FIPS_and_names.svg)
 
 <h2>Usage</h2>
