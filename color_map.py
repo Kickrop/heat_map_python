@@ -46,3 +46,4 @@ for p in paths:
 
 output = soup.prettify()
 open('output.svg', 'w').write(output)
+print('output.svg file created')
