@@ -2,8 +2,8 @@
 <p>You can easily build a heat map of US counties. The output file in svg format. You can change data, colors, distribution groups.</p>
 <h2>Settings</h2>
 
-* to change colors: edit _colors_ list
-* to change groups: add or delete conditions in _for p in paths:_ loop
+* to change colors: edit `colors` list
+* to change groups: add or delete conditions in `for p in paths:` loop
 
 * _unemployment09.csv_ used for data, 9nth colomn for unemployment rate, 2 and 3 column for FIPS id
 * _counties.svg_ used for the base map of USA counties (src: https://commons.wikimedia.org/wiki/File:USA_Counties_with_FIPS_and_names.svg)
