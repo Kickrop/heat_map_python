@@ -45,5 +45,6 @@ for p in paths:
         p['style'] = path_style + color
 
 output = soup.prettify()
-open('output.svg', 'w').write(output)
-print('output.svg file created')
+output_file_name = 'output'
+open(output_file_name + '.svg', 'w').write(output)
+print(output_file_name + '.svg file created')
